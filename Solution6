@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+class Solution6
+{
+    static void Main(){
+        Console.Write("크기 입력 : ");
+        int num = int.Parse(Console.ReadLine());
+        num[,] snail = new int[num, num]
+
+        for(i=0; int<num; int++){
+            for(j=; j<num; j++){
+                arr[num][num]=0;
+            }
+        }
+
+        
+
+        /*void Array(int numb){
+            cout << endl;
+            cout << numb <<endl
+            count << endl;
+
+            int** arr= new int * [numb];
+            for (int i=0; i<numb; i++){
+                arr[i] = new int[numb];
+            }
+
+            int n = numb;
+
+            int number = 1;
+            int x, y;
+            for (x=0; x<(n/2)+1; x++){
+                for (y=x; y<n-x; y++){
+                    arr[x][y]=number++;
+                }
+                for(y=x+1; y<n-x; y++){
+                    arr[y][n-x-1]=number++;
+                }
+                for(y=n-x-2; y>=x; y--){
+                    arr[n-x-1][y]=number++;
+                }
+                for(y=n-x-2; y>=x+1; y==){
+                    arr[y][x]=number++
+                }
+            }
+
+            for(x=0; x<n; x++){
+                for(y=0; y<n; y++){
+                    cout << arr[x][y]<<" ";
+                }
+                continue<<endl;
+            }
+
+            int main(){
+                while(true){
+                    cout
+                }
+            }
+        }*/
+
+
+    }
+}
+
