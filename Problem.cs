@@ -1,6 +1,7 @@
 using Sysyem;
 
-string word = "hello"
+Console.Write("Write the Word : ");
+string word = string.Parse(Console.ReadLine);
 
 int maxLives = 7;
 int currentLives=maxLives;
@@ -23,5 +24,28 @@ while(currentLives > 0 && !win)
 
     char guess = Convert.ToChar(Console.ReadLine());
 
-    if(word.Contains(guess) && )
+    if(word.Contains(guess) && !guessedLetters.Contains(guess))
+    {
+        Console.WriteLine("Correct!");
+    }
+    else
+    {
+        Console.WriteLine("Incorrect!");
+        currentLives--;
+    }
+    guessedLetters.Add(guess);
+
+    bool wordComplete=true;
+
+    foreach(char c in word)
+    if(!guessedLetters.Contains(c))
+    wordComplete=false;
+
+    win = wordComplete;
+}
+if(win){
+    Console.WriteLine("Congraguration. You Win!")
+}
+else{
+    Console.WriteLine("You lose...");
 }
